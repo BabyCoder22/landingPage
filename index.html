@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Task 1</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-image {
+            background-image: url("pic2.png");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+            .hero-text button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 10px 25px;
+                color: black;
+                background-color: #ddd;
+                text-align: center;
+                cursor: pointer;
+            }
+
+                .hero-text button:hover {
+                    background-color: #555;
+                    color: white;
+                }
+
+
+        .africa-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .text-container {
+            max-width: 100%;
+            padding: 50px;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .image-box {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">Travel in Tranquility</h1>
+            <p>Travel Around the world</p>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+
+        <div class="africa-section">
+            <h1>Africa Airways</h1>
+
+            <div class="content-container">
+                <img src="airways.png" alt="Image 1">
+                <div class="text-container">
+                    <p>
+                        Introducing Africa Airways, where the spirit of the continent takes flight! As a premier airline committed to connecting the diverse landscapes,
+                        cultures, and people of Africa, we proudly embark on a journey to redefine your travel experience.
+                        With a focus on excellence and a passion for showcasing the rich tapestry of this remarkable continent,
+                        Africa Airways invites you to explore the skies with unparalleled comfort, safety, and unmatched hospitality.
+                    </p>
+                </div>
+            </div>
+
+
+            <p style="text-align:center">
+                Our commitment to first-class service extends beyond the confines of the cabin, as we strive to embody the essence of Africa in every aspect of your journey.
+                From the moment you step on board, you will be greeted by a warm and welcoming atmosphere that reflects the diversity and vibrancy of the nations we serve.
+                Whether you are a seasoned traveler or embarking on your first adventure, Africa Airways is dedicated to ensuring your flight is an unforgettable and seamless experience.
+
+            </p>
+
+
+            <div class="content-container">
+                <div class="text-container">
+                    <p>
+                        Africa Airways is not just an airline; it's a celebration of the African spirit, connecting people and cultures across the continent.
+                        Committed to excellence, reliability, and genuine hospitality, the airline offers a seamless and enriching travel experience. With a focus
+                        on exceeding expectations, Africa Airways provides unparalleled service, boasting a modern fleet equipped with the latest technology.
+                        The airline promotes cultural enrichment, showcasing the diverse heritage of Africa through in-flight experiences. Beyond transportation,
+                        Africa Airways actively engages in philanthropy, supporting education, healthcare, and sustainable development. Every journey with Africa Airways
+                        is an opportunity to connect, discover, and be inspired, reflecting the essence of Africa.
+                    </p>
+                </div>
+                <img src="R2D2-lights.jpg" alt="Image 2">
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="image-box">
+            <img src="first class food.jpg" alt="Image 1">
+            <p>
+                Africa Airways takes pride in offering a culinary journey that mirrors the diverse and rich tapestry of African cuisine.
+                Our in-flight dining experience is curated to showcase the flavors, spices, and culinary traditions from various regions across the continent.
+                Passengers can expect a delightful array of dishes that represent the vibrant cultural heritage of Africa, with a focus on authenticity
+                and high-quality ingredients.
+            </p>
+        </div>
+
+        <div class="image-box">
+            <img src="business food.jpg" alt="Image 2">
+            <p>
+                From the savory delights of North African tagines to the bold and spicy flavors of West African jollof rice, our menu is a carefully crafted fusion
+                of traditional recipes and modern culinary innovation. We prioritize freshness and nutritional value, ensuring that every meal is a wholesome and satisfying
+                experience for our passengers. Whether you have a penchant for the aromatic stews of Ethiopia or the seafood delicacies of the coastal regions,
+                Africa Airways brings the essence of the continent to your tray table.
+            </p>
+        </div>
+
+        <div class="image-box">
+            <img src="residence food.jpg" alt="Image 3">
+            <p>
+                In addition to offering a diverse menu, Africa Airways is committed to accommodating special dietary preferences and requirements. Our culinary team is dedicated
+                to providing a memorable dining experience for every passenger, ensuring that the in-flight meals contribute to the overall enjoyment of the journey. Join us as we
+                elevate the skies with the tantalizing tastes of Africa, creating a culinary adventure that reflects the richness and diversity of the continent we proudly represent.
+            </p>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div style="background-color:blue" class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">Contact Us</h3>
+       
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="logo.png" class="w3-image w3-round" style="width:100%">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Johannesburg,South Africa<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 0652721428<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: tibrizzy22@mail.com<br>
+                </div>
+                <p> leave us a message:</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+</html>
